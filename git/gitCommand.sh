@@ -21,5 +21,5 @@ git status
 git commit -m "pesan perubahan"
 
 #mencommit atau push atau clonning commit di git lokal ke git remote(github)
-git push namaRemotenya
+git push namaRemotenya keBranchApaDiGitHub
 
