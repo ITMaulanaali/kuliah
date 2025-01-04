@@ -1,0 +1,8 @@
+//membuat project baru dengan gradle
+gradle init
+
+//mengkompilasi project main
+gradle classes
+
+//mengkompilasi project unit test
+gradle test
