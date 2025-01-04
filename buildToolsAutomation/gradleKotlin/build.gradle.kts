@@ -9,3 +9,20 @@ task.register("namaCustomGradleTaskNya"){
   }
 
 }
+
+//menambahkan repository default dari gradle ada:
+repositories{
+  //repository maven central atau java maven
+  mavenCentral()
+
+  //repository bintray JCenter
+  jcenter()
+
+  //repository google android
+  google() 
+
+  //repository bikinan sendiri
+  maven{
+    url = uri(https://linknya/repositories)
+  }
+}
