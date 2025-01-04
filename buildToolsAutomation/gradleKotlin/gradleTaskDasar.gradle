@@ -1,8 +1,15 @@
 //membuat project baru dengan gradle
 gradle init
 
-//mengkompilasi project main
+//mengrunning project main
 gradle classes
 
-//mengkompilasi project unit test
+//mengrunning project unit test
 gradle test
+
+//membuat distribution file atau compile automatis include dependency(library) dan hasil compile dapat di run ke windows atau linux environment
+gradle distTar //atau
+gradle distZip
+
+//mengrunning gradle jenis module atau library didalam root gradle atau didalam gradle application
+gradle namaSubFolderGradle:tasknya
