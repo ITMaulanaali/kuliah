@@ -102,3 +102,15 @@ tailrec fun factorialLoop(value: Int, total: Int): Int{
 val lambdaName: (String) -> String = {value: String ->
 	value.toUpperCase()
 }
+
+-----------------------------------------------------------------------------------------------
+//Higher-Order Function
+//sebuah fungsi bisa memiliki parameter function khususnya parameter yang inputnya lambda
+//parameter lambda harus dipaling akhir parameter kalau ingin dijadikan trailing lambda
+fun hello(value: String, transformer: (String) -> String): String{
+	return "Hello ${transformer(value)}";
+}
+
+----------------------------------------------------------------------------------------
+//Anonymous Function
+
