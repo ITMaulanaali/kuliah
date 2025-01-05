@@ -43,3 +43,9 @@ String =
 $namaVaribleString
 
 -----------------------------------------------------------------------------------------------------
+//Range (pengganti array sederhana untuk kebutuhan perulangan)
+val namaVariableRange = 1..100 //naik 1 dari 1-100
+val namaVariableRange = 100 downTo 0 //turun 1 dari 100-0
+val namaVariableRange = 1..100 step 5 //naik 5 dari 1-100
+
+
