@@ -22,3 +22,7 @@ int main(){
             cout << "semua hewan sudah habis" << endl;
     }
 }
+
+/*
+Pada switch case kita tidak bisa memasukan eskpresi dengan object. Khususnya object string
+*/
