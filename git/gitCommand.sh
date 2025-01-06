@@ -23,3 +23,5 @@ git commit -m "pesan perubahan"
 #mencommit atau push atau clonning commit di git lokal ke git remote(github)
 git push namaRemotenya keBranchApaDiGitHub
 
+#mengembalikan dan menghapus perubahan/modified dari commit sebelumnya
+git revert
