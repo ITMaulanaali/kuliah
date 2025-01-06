@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-    short s = 10;
+    unsigned short s = 10;
     int i = 11;
     long l = 12;
 
@@ -16,6 +16,7 @@ int main(){
 
 /*
 terdapat 3 tipe data untuk bilangan bulat yaitu
+mendukung unsigned sehingga dapat mengalokasikan semua nilainya ke positif(tidak bisa menyimpan nilai negatif sehingga range nilainya semakin besar positif)
 short   2Byte
 int     4Byte
 long    8Byte
