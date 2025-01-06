@@ -10,6 +10,8 @@ int main(){
     cout << sizeof(s) << "Byte" << endl;
     cout << sizeof(i) << "Byte" << endl;
     cout << sizeof(l) << "Byte" << endl;
+    cin.get();
+    return 0;
 }
 
 /*
