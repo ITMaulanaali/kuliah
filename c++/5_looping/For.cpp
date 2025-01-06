@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 
     int loop;
-
+    
     for(int a=5; a<10; a++){
         loop += 1;
         cout << "nilai a: " << a << endl;
