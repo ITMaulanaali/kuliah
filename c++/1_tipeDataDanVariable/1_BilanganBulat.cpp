@@ -3,13 +3,13 @@ using namespace std;
 
 int main(){
 
-    short s;
-    int i;
-    long l;
+    short s = 10;
+    int i = 11;
+    long l = 12;
 
-    cout << sizeof(s) << "Byte" << endl;
-    cout << sizeof(i) << "Byte" << endl;
-    cout << sizeof(l) << "Byte" << endl;
+    cout << "short " << sizeof(s) << "Byte" << " Nilai: " << s << endl;
+    cout << "int " << sizeof(i) << "Byte" << " Nilai: " << i << endl;
+    cout << "long " << sizeof(l) << "Byte" << " Nilai: " << l << endl;
     cin.get();
     return 0;
 }
