@@ -14,4 +14,7 @@ int main(){
 
 /*
 Pada operator decrement setiap kali a-- dieksekusi itu sama saja dengan mengurangi satu -1 nilai di variabel a
+terdapat 2 cara yaitu:
+a-- post-increment
+--a pre-decrement
 */
