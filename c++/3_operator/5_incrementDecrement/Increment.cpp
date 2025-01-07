@@ -14,4 +14,7 @@ int main(){
 
 /*
 Pada operator increment setiap kali a++ dieksekusi itu sama saja dengan menambah satu +1 nilai di variabel a
+Terdapat 2 cara yaitu:
+a++ post-increment
+++a pre-increment
 */
