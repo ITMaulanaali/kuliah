@@ -3,34 +3,29 @@ using namespace std;
 
 int main(){
 
-    int banyakFibonacci = 8;
-    int nilai = 1, hasil = 1, hasilSebelumnya = 1;
+    int n = 5;
+    int fn;
+    int fn_1 = 1;
+    int fn_2 = 0;
 
-    for(int i = 0; i < banyakFibonacci; i++){
+    for(int i=1; i<=n; i++){
 
-        cout << nilai << endl;
-
-        nilai = nilai + hasilSebelumnya;
-
-
+        fn = fn_1 + fn_2;
+        fn_2 = (fn_1);
+        fn_1 = (fn);
+        cout << fn_2 << endl;
     }
 
-    // 1 1 2 3 5 8 13
-
-    //2    = 1    + 1
-    //h(2) = h(1) + h(1)
-
-    //2    = 2             + 1         = 3
-    //h(3) = h(2)          + h(1)      = h
-
-    //3    = 3             + 2         = 5
-    //h(5) = h(3)          + h(2)      = h
-
-    //5    = 5             + 3         = 8
-    //h(8) = h(5)          + h(3)      = h
-
-    //8    = 8             + 5         = 13
-    //h(13)= h(8)
-
-
+    cout << fn << endl;
+    
+    cin.get();
+    return 0;
 }
+
+/*
+Jika ingin menerapkan operasi rumus matematika ke pemrograman, pastikan untuk memperhatikan urutan dari atas kebawah dan dari kiri kekanan sebuah program
+Untuk memulai program jelas sekali harus memasukan input(variable), inputan apa saja atau material apa saja yang dibutuhkan untuk fibonaci.
+baru kemudian setelah mendapat proses dan hasil, kita bisa memperpendek atau efisiensi penulisan variable hingga proses pembuatan fibonaci.
+
+Kita tidak bisa membuat / oprek rumus fibonaci jika kita tidak tahu batas bawah dan atas. Sehingga program diatas membuat polanya sendiri dengan memberi nilai pasti di batas paling bawah sesuai dengan sifat fibonaci yaitu menjumlahkan nilai sebelumnya
+*/
