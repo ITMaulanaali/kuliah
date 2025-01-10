@@ -2,7 +2,7 @@
 using namespace std;
 
 //prototype fungsi. Fungsi sebenarnya ada dibawah
-void penjumlahan(int nilaiA, int nilaiB);
+void penjumlahan(int, int);
 void namaKu();
 
 int main(){
