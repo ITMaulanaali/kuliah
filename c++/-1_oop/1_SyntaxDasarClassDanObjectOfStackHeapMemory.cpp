@@ -45,6 +45,7 @@ int main(){
 
     //tidak dapat digunakan karena protected
     // lana.hobiMahasiswa();
+    cout << endl;
 
     //menyimpan object di stack memory, sehingga alokasi memory akan di release otomatis setelah program object selesai di scopenya{} dalam hal ini release setelah melewati int main()
     Mahasiswa rangga = Mahasiswa("rangga");
