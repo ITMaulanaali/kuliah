@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-    int a = 100;
+    int a = 6;
 
     //geser ke kiri satu
     int hasil = a >> 1;
