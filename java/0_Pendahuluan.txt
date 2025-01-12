@@ -1,0 +1,12 @@
+Compiler java sebenarnya berfungsi sebagai Interpreter. Yaitu tidak seperti c++ yang benar benar dirubah ke machine code untuk dijalankan mesin(komunikasi hardware lewat kernel)
+Java menggunakan Interpreter yang menjalankan Program java dari hasil ByteCode. Kemudian interpreter akan berkomunikasi dengan API sistem untuk berkomunikasi dengan kernel.
+
+Pada Bahasa pemrograman java. Ini secara implisit atau otomatis mengimport Package standar default atau bawaannya yaitu java.lang
+
+Beberapa kata kunci yang tidak boleh dimasukan:
+
+abstract, assert, boolean, break, byte, case, catch, char, class, continue,
+default, do, double, else, enum, extends, final, finally, float, for,
+if, implements, import, instanceof, int, interface, long, native, new, package,
+private, protected, public, return, short, static, strictfp, super, switch, synchronized,
+this, throw, throws, transient, try, void, volatile, while.
