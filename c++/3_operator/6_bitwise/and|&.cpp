@@ -4,8 +4,8 @@ using namespace std;
 
 int main(){
 
-    int a = 100;
-    int b = 200;
+    int a = 3;
+    int b = 6;
 
     int hasil = a & b;
 
