@@ -1,3 +1,4 @@
+
 class BilanganDecimal{
     
     public static void main(String[] args){
@@ -8,3 +9,8 @@ class BilanganDecimal{
         System.out.printf("Double d bernilai:   %f dengan range: %d Byte",d, Double.BYTES); System.out.println();
     }
 }
+
+/*
+ * float ->     4Byte
+ * double ->    8Byte
+ */
