@@ -4,9 +4,14 @@ using namespace std;
 int main(){
 
     int a = 5;
-    a--;
+    int hasil;
 
-    cout << "Hasil variable a = 5 decrement a-- adalah: " << a << endl;
+    hasil = a--;
+    cout << "Hasil variable a=5 decrement a--, simpan ke hasil: " << hasil << " nilai a: " << a << endl;
+
+    a = 5;
+    hasil = --a;
+    cout << "Hasil variable a=5 decrement --a, simpan ke hasil: " << hasil << " nilai a: " << a << endl;
 
     cin.get();
     return 0;
