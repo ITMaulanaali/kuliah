@@ -1,3 +1,4 @@
+
 class BilanganBulat{
     
     public static void main(String[] args){
@@ -12,3 +13,10 @@ class BilanganBulat{
         System.out.printf("long l bernilai:     %d dengan range: %d Byte",l, Long.BYTES); System.out.println();
     }
 }
+
+/*
+ * byte ->  1Byte
+ * short -> 2Byte
+ * int ->   4Byte
+ * long ->  8Byte
+ */
