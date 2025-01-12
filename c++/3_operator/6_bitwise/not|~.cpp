@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
 
-    int b = 200;
+    int b = 3;
 
     int hasil =  ~b;
 
