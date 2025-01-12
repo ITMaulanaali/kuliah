@@ -18,7 +18,7 @@ int main(){
 
     cout << "perbandingan and(&) dari kedua bit variablenya adalah: " << bitset<8>(hasil) << endl;
     cout << "Hasil bitwise & nilai bitnya jika dikonversi ke int adalah: " << hasil << endl;
-
+/**/
     cin.get();
     return 0;
 }
