@@ -4,17 +4,17 @@ using namespace std;
 
 int main(){
 
-    string hewan;
+    int inputUser;
     
-    cout << "Masukkan nama hewannya" << endl;
-    cin >> hewan;
+    cout << "Masukkan umurmu dari 5-18 tahun" << endl;
+    cin >> inputUser;
 
-    if(hewan == "sapi"){
-        cout << "benar sekali hewannya sapi" << endl;
-    }else if(hewan == "ikan"){
-        cout << "benar sekali hewannya ikan" << endl;
+    if(inputUser >= 5 && inputUser < 10){
+        cout << "Anda adalah anak kecil" << endl;
+    }else if(inputUser >= 10 && inputUser <= 18){
+        cout << "Anda adalah remaja" << endl;
     }else{
-        cout << "maaf kamu salah menebak" << endl;
+        cout << "Anda tidak memasukan range tahun dengan benar" << endl;
     }
 
     cin.get();
