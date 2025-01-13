@@ -3,12 +3,11 @@ using namespace std;
 
 int main(){
 
-    int loop;
+    int iterasi;
     
     for(int a=5; a<10; a++){
-        loop += 1;
-        cout << "nilai a: " << a << endl;
-        cout << "Looping sebanyak" << loop << endl;
+        iterasi++;
+        cout << "Iterasi sebanyak: " << iterasi << " nilai a= " << a << endl;
     }
 }
 
