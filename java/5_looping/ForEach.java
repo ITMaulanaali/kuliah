@@ -9,3 +9,7 @@ class ForEach {
         }
     }
 }
+
+/*
+ * for-each digunakan untuk mengambil semua nilai dari alamat variable yang memiliki kumpulan nilai didalamnya (Biasanya array)
+ */
