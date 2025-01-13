@@ -4,14 +4,13 @@ using namespace std;
 int main(){
 
     int a = 5;
-    int loop;
+    int iterasi;
 
     do{
-        a += 1;
-        loop += 1;
-        cout << "nilai a: " << a << endl;
-        cout << "Looping sebanyak" << loop << endl;
-    }while(a < 10);
+        a++;
+        iterasi++;
+        cout << "Iterasi sebanyak: " << iterasi << " nilai a= " << a << endl;
+    }while(a<=10);
 
     cin.get();
     return 0;
