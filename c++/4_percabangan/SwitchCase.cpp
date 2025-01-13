@@ -4,22 +4,25 @@ using namespace std;
 
 int main(){
 
-    enum Hewan {ikan,sapi,kuda,burung};
+    int inputUser;
 
-    cout << "hasil tebakan benar akan menampilkan sisa hewan di enum" << endl << endl;
-    Hewan hewan = sapi;
+    cout << "Masukan start urutan dari 5-9" << endl << endl;
+    cin >> inputUser;
 
-    switch(hewan){
-        case ikan:
-            cout << "ini adalah ikan kamu menebak diawal, menampilkan ikan" << endl;
-        case sapi:
-            cout << "ini adalah sapi kamu menebak dikedua, menampilkan sapi" << endl;
-        case kuda:
-            cout << "ini adalah kuda kamu menebak diketiga, menampilkan kuda" << endl;
-        case burung:
-            cout << "ini adalah burung kamu menebak diterakhir, menampilkan burung" << endl;
+    switch(inputUser){
+        case 5:
+            cout << "berurut dari 5" << endl;
+        case 6:
+            cout << "berurut dari 6" << endl;
+        case 7:
+            cout << "berurut dari 7" << endl;
+        case 8:
+            cout << "berurut dari 8" << endl;
+        case 9:
+            cout << "berurut dari 9" << endl;
+            break;
         default:
-            cout << "semua hewan sudah habis" << endl;
+            cout << "anda tidak mengurutkan sesuai range yang ada" << endl;
     }
 }
 
