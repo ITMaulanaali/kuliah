@@ -1,9 +1,9 @@
 package refrensiObject;
 
 class Mahasiswa {
-    String nama;
-    String jurusan;
-    int nim;
+    private String nama;
+    private String jurusan;
+    private int nim;
 
     Mahasiswa(String nama, String jurusan, int nim){
         this.nama = nama;
