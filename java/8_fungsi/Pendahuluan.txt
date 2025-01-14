@@ -1,0 +1,6 @@
+Pada fungsi atau method untuk dipanggil oleh fungsi main didalam class. Itu harus didepanya juga menggunakan static
+karena memang fungsi: 
+
+public static void main(String[] args)
+
+itu sudah secara default bawaan dan harus syntax static seperti itu
