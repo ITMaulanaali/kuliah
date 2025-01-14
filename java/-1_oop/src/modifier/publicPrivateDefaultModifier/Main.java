@@ -1,4 +1,4 @@
-package modifier;
+package modifier.publicPrivateDefaultModifier;
 
 class Main {
     public static void main(String[] args) {

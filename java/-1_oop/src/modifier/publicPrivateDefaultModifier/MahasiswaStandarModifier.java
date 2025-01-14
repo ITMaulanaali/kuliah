@@ -1,6 +1,6 @@
-package modifier;
+package modifier.publicPrivateDefaultModifier;
 
-public class MahasiswaModifier {
+public class MahasiswaStandarModifier {
     private String nama;
     private String jurusan;
     private int nim;
