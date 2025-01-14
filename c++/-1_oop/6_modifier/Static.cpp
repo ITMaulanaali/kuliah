@@ -16,8 +16,8 @@ class Mahasiswa{
             this->nim = nim;
         }
 
-        void tampilkanNimStatic(){
-            cout << this->nim << endl;
+        static void tampilkanNimStatic(){
+            cout << Mahasiswa::nim << endl;
         }
 };
 
@@ -38,5 +38,6 @@ int main(){
 }
 
 /*
-static digunakan untuk memasukan nilai static yang menempel pada si class itu sendiri
+static digunakan untuk memasukan nilai static yang menempel pada si class itu sendiri.
+Fungsi/method yang menggunakan static semua statementnya harus menggunakan nilai atribut dari static
 */
