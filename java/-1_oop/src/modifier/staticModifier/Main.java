@@ -1,5 +1,8 @@
 package modifier.staticModifier;
 
+//hanya mengambil fungsi staticnya
+import static modifier.staticModifier.Mahasiswa.setNim;
+
 class Main {
     public static void main(String[] args) {
         Mahasiswa lana = new Mahasiswa("lana", "TI", 412);
@@ -11,7 +14,9 @@ class Main {
 
         System.out.println();
 
-        Mahasiswa.setNim(444);
+        // Mahasiswa.setNim(444);
+        setNim(444);
+
         lana.outData();
         rangga.outData();
         reno.outData();
@@ -21,4 +26,6 @@ class Main {
 /*
  * atribut nim diset sebagai static. Sehingga nim juga menempel pada nama Class.
  * ketika nim Class disetNimnya maka semua objet yang di instansiasi dengan class tersebut nimnya akan mengikut nim class static
+ * 
+ * Java juga dapat mengimport hanya atribut atau fungsi/method staticnya saja tanpa nama class
  */
