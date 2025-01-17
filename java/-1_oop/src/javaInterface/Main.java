@@ -8,10 +8,10 @@ class Main {
         lana.outData();
         lana.tampilkanNim(); System.out.println();
 
-        lana.pullPolymorphismDosen(new DosenKaprodi("Bu Rani", "Konsep basis data", 111, "Ti"));
+        lana.pullCompositionDosen(new DosenKaprodi("Bu Rani", "Konsep basis data", 111, "Ti"));
         lana.outDataAll(); System.out.println();
 
-        lana.pullPolymorphismDosen(new DosenBiasa("Pak Adi", "Jaringan", 222));
+        lana.pullCompositionDosen(new DosenBiasa("Pak Adi", "Jaringan", 222));
         lana.outDataAll();
     }
     

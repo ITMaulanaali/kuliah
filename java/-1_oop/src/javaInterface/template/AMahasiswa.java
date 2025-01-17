@@ -22,7 +22,7 @@ public abstract class AMahasiswa {
         return this.nim;
     }
     
-    public void pullPolymorphismDosen(IDosen dosen){
+    public void pullCompositionDosen(IDosen dosen){
         this.dosen = dosen;
     }
 
