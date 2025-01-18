@@ -5,27 +5,21 @@ class Mahasiswa {
     private String jurusan;
     private int nim;
 
-    private Dosen dosen;
+    private Prodi prodi;
 
-    Mahasiswa(String nama, String jurusan, int nim){
+    Mahasiswa(String nama, String jurusan, int nim, String matkul){
         this.nama = nama;
         this.jurusan = jurusan;
         this.nim = nim;
-    }
-
-    void pullDosen(Dosen dosen){
-        this.dosen = dosen;
+        this.prodi = new Prodi("teknik informatika",matkul);
     }
 
     void outData(){
         System.out.println(this.nama);
         System.out.println(this.jurusan);
         System.out.println(this.nim);
-        try{
-            System.out.println("object dosen sudah memiliki reference alamat dan memanggil datanya:");
-            dosen.outData();
-        }catch(Exception e){
-            System.out.println("belum ada object dosen yang dimasukan");
-        }
+
+        //composisi karena harus ada pada kombinasi dengan Mahasiswa(tidak akan bisa menampilkan dengan matkul jika tanpa prodi)
+        System.out.println(prodi.getProdi() + " dengan matkul: " + prodi.getMatkul());
     }
 }
