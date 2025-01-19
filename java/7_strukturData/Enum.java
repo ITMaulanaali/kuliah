@@ -2,12 +2,14 @@
 class Enum {
     
     public static void main(String[] args) {
-        enum warna{merah, kuning, hijau, biru};
+        
 
         System.out.println(warna.merah);
         System.out.println(warna.hijau);
         System.out.println(warna.biru);
     }
+
+    static enum warna{merah, kuning, hijau, biru};
 }
 
 /*
