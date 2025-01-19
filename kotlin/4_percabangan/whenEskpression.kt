@@ -52,3 +52,8 @@ when{
 	else -> println("bodoh")
 }
 
+/*
+Sebenarnya when sudah bisa menggantikan percabangan if, switch, ternary bahkan lebih powerfull karena sangat flexibel
+
+When tidak seperti switch case yang membutuhkan break. When adalah jenis percabangan sendiri milik kotlin
+ */
