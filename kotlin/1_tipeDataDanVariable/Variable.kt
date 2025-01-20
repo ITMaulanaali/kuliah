@@ -1,3 +1,4 @@
+const val harusGlobal: String = "Ini variable global"
 
 fun main() {
 
@@ -16,6 +17,7 @@ fun main() {
     println("NIlai variableNull:  $variableDapatNull")
     println("NIlai variableNull:  $variableTypeDataOtomatis")
     println("Nilai konversi variable Null ke tidak Null dari variable imutable ${variableNotNullAssertion}")
+    println(harusGlobal)
 }
 
 /*
