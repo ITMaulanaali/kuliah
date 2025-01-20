@@ -13,3 +13,8 @@ int main(){
     cin.get();
     return 0;
 }
+
+/*
+c++ tidak mendukung casting otomatis seperti java,kotlin,javascript.
+semua operasi yang akan merubah nilai ke type data tertentu harus disesuaikan dengan casting manual
+*/
