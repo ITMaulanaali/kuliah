@@ -10,3 +10,7 @@ int main(){
     cin.get();
     return 0;
 }
+
+/*
+String seperti ini disebut juga sebagai string literal atau bukan dari library atau sebuah object
+*/
