@@ -9,14 +9,15 @@ int perkalian(int a, int b){
     return a*b;
 }
 
-//Higher-order function yang di overloading biar lebih mudah aja
+
 void denganParameterFungsi(void (*ptrFungsi)(int), int a, int b){
     ptrFungsi(a);
-    cout << "diatas adalah hasil referensi dari parameter fungsi Penjumlahan" << endl;
     cout << "dan ini adalah nilai dari parameter b: " << b << endl;
 }
 void denganParameterFungsi(int (*ptrFungsi)(int, int), int a, int b){
-    cout << "ini adalah nilai hasil perkalian dari parameter referensi fungsi a dengan b: " << ptrFungsi(a,b) << endl;
+    int hasil = a+b;
+    cout << "Contoh disebut callback ketika fungsi utama telah melakukan proses atau sedang proses kemudian memanggil kembali fungsi selanjutnya: " << ptrFungsi(hasil,b) << endl;
+    cout << ptrFungsi(ptrFungsi(hasil,b),a);
 }
 
 int main(){
@@ -30,6 +31,6 @@ int main(){
 }
 
 /*
-Higher-order function adalah fungsi yang memiliki parameter yang bisa diinputkan fungsi/reference fungsi lainnya.
-Jika parameter memanggil fungsi bukan referencing atau bahkan menjalankan fungsi lain di dalam body fungsi itu tidak termasuk higher-order function
+higher order function sama dengan callback. Yang membedakan lebih umum yaitu memiliki parameter fungsi yang referencing dan dapat direturn atau dipanggil seperti bisa
+sedangkan callback adalah pemanggilan kembali sebuah fungsi dari parameter untuk mengolah proses dari fungsi utama
 */
