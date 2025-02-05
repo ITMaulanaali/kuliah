@@ -14,6 +14,9 @@ suatu hasil baik potongan source code ataupun basic selama di kampus
 Dokumen pembelajaran kampus
 
 <a href="https://drive.google.com/drive/folders/1vVBEGYl33SGO2dttFbRZFAnThV2akjrM?usp=sharing"> Link ke Drive </a>
+
 <a href="https://drive.google.com/file/d/1chJwQKXcCH0QgiHc24KYs-Po23Gyz_LN/view?usp=sharing"> Jadwal semester2 </a>
+
+<a href="https://drive.google.com/drive/folders/1emkBBzMyvgr2bt-XLy84Xyilqm2hHKOU?usp=sharing"> upload drive </a>
 
 -----------------------------------------------------------------------------------
