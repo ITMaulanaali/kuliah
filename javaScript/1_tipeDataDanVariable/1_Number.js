@@ -13,4 +13,6 @@ console.log(numberEskponen);
 /**
  * JavaScript menggunakan alokasi 64bit/8byte untuk number
  * tapi tidak terbatas untuk type data BigInt dengan memberikan n dibelakang angka
+ * Jangan pernah mengawali bilangan dengan 0 karena akan dianggap oktal atau hexadecimal jiak 0x
+ * serta pembagian dengan nol(0) akan menghasilkan Infinity
  */
