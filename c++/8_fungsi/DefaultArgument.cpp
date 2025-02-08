@@ -14,5 +14,6 @@ int main(){
 }
 
 /*
-Default argumen secara sederhana hanyalah sebuah fungsi yang memiliki nilai default di parameternya
+Default argumen secara sederhana hanyalah sebuah fungsi yang memiliki nilai default di parameternya.
+Syarat atau aturan pemberia default parameter harus berada di paling akhir parameter
 */
