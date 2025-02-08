@@ -1,0 +1,6 @@
+Operator di javaScript bisa dibilang sangat sensitiv. Selalu perhatikan data" operand yang ada agar tidak terjadi kesalahan operasi antar operand.
+
+Seperti operasi number dengan string itu sama saja seperti menggabungkan data bukannya mengoperasikan data;
+serta operator === dan == yang digunakan javaScript untuk membedakan data operand
+
+Untuk shiftRight 3 kali itu hanya berlaku khusus untuk shiftRight menanggani geser number negatif ke kanan.
