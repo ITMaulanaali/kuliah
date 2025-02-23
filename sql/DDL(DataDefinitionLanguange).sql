@@ -127,6 +127,10 @@ ALTER TABLE nama_table
 ALTER TABLE nama_table
   DROP CONSTRAINT nama_constraintnya;
 
+-- Menghapus atau menghilangkan semua primary key di table
+ALTER TABLE nama_table
+  DROP PRIMARY KEY;
+
 -- Menambahkan kolom baru pada table yang ditimpa / alter
 ALTER TABLE nama_table
   ADD COLUMN nama_kolom VARCHAR(10);
