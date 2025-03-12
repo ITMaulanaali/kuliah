@@ -37,7 +37,7 @@ SHOW DATABASES;
 -- Masuk ke database untuk mulai management table
 USE databasename; --bukan termasuk DQL
 
-SELECT LAST_INSERT_ID(); untuk cek id terkahir yang telah di auto increment
+SELECT LAST_INSERT_ID(); --untuk cek id terkahir yang telah di auto increment
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 --MENGAKSES TABLE
 
