@@ -28,3 +28,4 @@ git revert
 
 #membatalkan dan mengembalikan file ke working directory dari commit yang tidak sengaja sebelumnya
 git reset --soft HEAD~1
+git reset --hard HEAD~1
