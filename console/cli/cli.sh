@@ -37,3 +37,8 @@ sudo chmod +x /opt/android-studio/bin/studio.sh
 update-desktop-database /usr/share/applications/
 echo "Instalasi selesai! Android Studio sudah siap digunakan."
 
+#menginstall driver printer opensource yang dapat support ke beberapa printer epson terkenal seri lama(ip2770)
+apt install printer-driver-gutenprint
+
+#menginstall kicad
+apt install kicad
