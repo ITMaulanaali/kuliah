@@ -1,7 +1,29 @@
-/*
-Universal Selector
-*/
-
+/* Universal Selector */
 *{
     font-family: 'Times New Roman';
+}
+
+/* Type Selector */
+h1{
+    color:deepskyblue;
+}
+
+/* Class Selector */
+h6.halo{
+    color:deeppink;
+}
+
+/* Id Selector */
+#jenis_selector_blueviolet{
+    color:blueviolet;
+}
+
+/* Child Selector */
+p>i{
+    color:green;
+}
+
+/* Descendant Selector */
+p>i>b{
+    color:red;
 }
