@@ -19,11 +19,11 @@ h6.halo{
 }
 
 /* Child Selector */
-p>i{
-    color:green;
-}
-
-/* Descendant Selector */
 p>i>b{
     color:red;
+}
+
+/* Descendent Selector */
+p i{
+    color:green;
 }
