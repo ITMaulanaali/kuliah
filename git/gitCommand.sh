@@ -21,7 +21,13 @@ git status
 git commit -m "pesan perubahan"
 
 #mencommit atau push atau clonning commit di git lokal ke git remote(github)
-git push namaRemotenya keBranchApaDiGitHub
+git push origin main keBranchApaDiGitHub
+
+#mengcek apakah ada update terbaru di repository
+git fetch
+
+#mengambil update terbaru di repository
+git pull
 
 #mengembalikan dan menghapus perubahan/modified dari commit sebelumnya
 git revert
