@@ -35,5 +35,17 @@ git revert
 #mengclone repository
 git clone git@github.com:username/namarepo
 
+#membuat branch baru
+git branch newBranch
+
+#berpindah ke branch baru
+git switch newBranch
+
+#mengdelete branch yang belum di merge secara lokal karena sudah di pull request merge ke github
+git branch -D newBranch
+
+#mendelet branch yang sudah di merge secara lokal di git
+git branch -d newBranch
+
 #membatalkan dan mengembalikan file ke working directory dari commit yang tidak sengaja sebelumnya
 git reset --soft HEAD~1
