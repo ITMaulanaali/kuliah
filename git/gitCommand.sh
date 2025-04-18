@@ -53,3 +53,15 @@ git reset --soft HEAD~1
 #menambahkan konfigurasi file konfigurasi file .ini ke git local jika berpindah branch
 [includeIf "onbranch:master"]
   path = /lokasi/filenya
+
+#menyimpan hasil coding di suatu branch untuk di lanjutkan lagi(alias dari git commit/stash) sehingga tidak tercommit
+git stash
+
+#melihat daftar stash yang ada
+git stash list
+
+#mengambil stash sebelumnya
+git stash pop
+
+#mengupdate data branch yang terbaru di github ke git local
+git pull --prune
