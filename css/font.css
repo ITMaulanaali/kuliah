@@ -1,0 +1,31 @@
+#font-family{
+    font-family: Verdana;
+}
+
+#xx-large{
+    font-size: xx-large;
+}
+
+#xx-small{
+    font-size: xx-small;
+}
+
+#pixel{
+    font-size: 15px;
+}
+
+#persen{
+    font-size: 50%;
+}
+
+#em{
+    font-size: 0.5em;
+}
+
+#font-weight{
+    font-weight: bold;
+}
+
+#font-style{
+    font-style: italic;
+}

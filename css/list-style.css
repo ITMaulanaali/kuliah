@@ -1,0 +1,23 @@
+#upper-roman{
+    list-style-type: upper-roman;
+}
+
+#lower-roman{
+    list-style-type: lower-roman;
+}
+
+#upper-latin{
+    list-style-type: upper-latin;
+}
+
+#lower-latin{
+    list-style-type: lower-latin;
+}
+
+#inside{
+    list-style-position: inside;
+}
+
+#outside{
+    list-style-position: outside;
+}

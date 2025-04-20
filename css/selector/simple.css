@@ -1,0 +1,19 @@
+/* Universal Selector */
+*{
+    font-family: 'Times New Roman';
+}
+
+/* Type Selector */
+h1{
+    color:deepskyblue;
+}
+
+/* Class Selector */
+.halo{
+    color:deeppink;
+}
+
+/* Id Selector */
+#id-selector-blueviolet{
+    color:blueviolet;
+}

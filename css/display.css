@@ -1,0 +1,7 @@
+#inline>span{
+    display: inline;
+}
+
+#block>span{
+    display: block;
+}

@@ -1,40 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="selector.css">
-    <title>CSS Reference</title>
-</head>
-<body>
-    <h1>HTML untuk pembelajaran CSS</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="selector/simple.css">
+        <link rel="stylesheet" href="selector/combinator.css">
+        <link rel="stylesheet" href="selector/atribut.css">
+        <link rel="stylesheet" href="color.css">
+        <link rel="stylesheet" href="font.css">
+        <link rel="stylesheet" href="text.css">
+        <link rel="stylesheet" href="display.css">
+        <link rel="stylesheet" href="list-style.css">
+        <title>CSS Reference</title>
+    </head>
+    <body>
+        <h1>HTML untuk pembelajaran CSS</h1>
         <p>Semua text di page ini sudah di set font nya menjadi Times New Roman dengan universal selector css.</p>
 
-        <p>Berikut adalah kategori contoh pembelajaran CSS:</p>
-            <li><a href="#jenis_selector" target="_self">Selector</a></li>
-
-    <h2 id="jenis_selector">Selector</h2>
+        <p>Berikut adalah kategori contoh penggunaan CSS:</p>
         <ul>
-            <li>Type Selector</li>
-            <p>Contoh merubah judul dengan type h1 diatas dengan warna deepskyblue menggunakan type selector</p>
-            <br>
-            <li>Class Selector</li>
-            <p>Contoh merubah text <div class="halo">HELLO</p> dan <div class="halo">DEEPPINK</p> ini dengan warna deeppink menggunakan class selector</p>
-            <br>
-            <li>Id Selector</li>
-            <p id="jenis_selector_blueviolet">Contoh merubah kalimat ini dengan warna blueviolet menggunakan id selector</p>
-            <br>
-            <li>Child Selector</li>
-            <p>Contoh merubah child yang memiliki child bold yang italic <i><b>HALLO BOLD DIDALAM ITALIC</b></i> ini dengan warna merah menggunakan child selector</p>
-            <br>
-            <li>Descandent Selector</li>
-            <p>Contoh merubah child kata italic <i>HALLO</i> dan <i>GREEN</i> ini dengan warna hijau menggunakan descandent selector</p>
-            <br>
-            <li>Adjacent Sibling Selector</li>
-            <p>Contoh merubah paragraf setelah judul di paling atas yang menggunakan type h1 dengan warna brown. Paragraf kedua tidak akan terpengaruh karena hanya yang disampingnya atau dekat</p>
-            <br>
-            <li>General Sibling Selector</li>
-            <p>Contoh merubah paragraf setelah h2 yaitu judul selector dengan warna orange</p>
+            <li><a href="#jenis-selector" target="_self">Selector</a></li>
+            <li><a href="#color" target="_self">Color</a></li>
+            <li><a href="#font" target="_self">Font</a></li>
+            <li><a href="#text" target="_self">Text</a></li>
+            <li><a href="#display" target="_self">Display</a></li>
+            <li><a href="#list-style" target="_self">List Style</a></li>
         </ul>
-</body>
+
+        <div id="jenis-selector">
+            <h2>Selector</h2>
+            <ul>
+                <h3>Simple Selector</h3>
+                <li>Type</li>
+                <p>Contoh merubah judul dengan type h1 diatas dengan warna deepskyblue menggunakan type selector</p>
+                <li>Class</li>
+                <p>Contoh merubah text <span class="halo">HELLO</span> dan <span class="halo">DEEPPINK</span> ini dengan warna deeppink menggunakan class selector</p>
+                <li>Id</li>
+                <p id="id-selector-blueviolet">Contoh merubah kalimat ini dengan warna blueviolet menggunakan id selector</p>
+
+                <h3>Combinator Selector</h3>
+                <li>Child</li>
+                <p>Contoh merubah child yang memiliki child bold yang italic <i><b>HALLO BOLD DIDALAM ITALIC</b></i> ini dengan warna merah menggunakan child selector</p>
+                <li>Descandent</li>
+                <p>Contoh merubah child kata italic <i>HALLO</i> dan <i>GREEN</i> ini dengan warna hijau menggunakan descandent selector</p>
+                <li>Adjacent Sibling</li>
+                <p>Contoh merubah paragraf setelah judul di paling atas yang menggunakan type h1 dengan warna brown. Paragraf kedua tidak akan terpengaruh karena hanya yang disampingnya atau dekat</p>
+                <li>General Sibling</li>
+                <p>Contoh merubah paragraf setelah h2 yaitu judul Selector entah seberapa jauh jaraknya dengan warna orange. Ini akan merubah semua turunanya (paragraf apapun setelah h2) menjadi warna orange</p>
+
+                <h3>Atribut Selector</h3>
+                <li>Biasa</li>
+                <p title="atribut_selector_biasa">Contoh merubah kalimat ini yang memiliki atribut title dengan hanya kata "atribut_selector_biasa" menjadi warna ungu"</p>
+                <li>Cacing ~</li>
+                <p title="atribut cacing selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata atribut "atribut cacing selector" menjadi warna ungu</p>
+                <li>Pipeline |</li>
+                <p title="pipeline-atribut selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata pipeline dan dapat di ikuti penghubung - didepannya "pipeline-atribut selector" menjadi warna ungu</p>
+                <p title="pipeline-atribut-selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata pipeline dan dapat di ikuti penghubung - didepannya "pipeline-atribut-selector" menjadi warna ungu</p>
+                <p title="pipeline-atribut_selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata pipeline dan dapat di ikuti penghubung - didepannya "pipeline-atribut_selector" menjadi warna ungu</p>
+                <li>Caret ^</li>
+                <p title="caret atribut selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata caret diawal kalimat "caret atribut selector" menjadi warna ungu</p>
+                <p title="caret atribut-selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata caret diawal kalimat "caret atribut-selector" menjadi warna ungu</p>
+                <p title="caret atribut_selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata caret diawal kalimat "caret atribut_selector" menjadi warna ungu</p>
+                <p title="caret-atribut selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata caret diawal kalimat "caret-atribut selector" menjadi warna ungu</p>
+                <p title="caret-atribut-selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata caret diawal kalimat "caret-atribut-selector" menjadi warna ungu</p>
+                <p title="caret-atribut_selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata caret diawal kalimat "caret-atribut_selector" menjadi warna ungu</p>
+                <p title="caret_atribut selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata caret diawal kalimat "caret_atribut selector" menjadi warna ungu</p>
+                <p title="caret_atribut-selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata caret diawal kalimat "caret_atribut-selector" menjadi warna ungu</p>
+                <p title="caret_atribut_selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata caret diawal kalimat "caret_atribut_selector" menjadi warna ungu</p>
+                <li>Dollar $</li>
+                <p title="atribut selector dollar">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata dollar diakhir kalimat "atribut selector dollar" menjadi warna ungu</p>
+                <p title="atribut selector-dollar">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata dollar diakhir kalimat "atribut selector-dollar" menjadi warna ungu</p>
+                <p title="atribut selector_dollar">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata dollar diakhir kalimat "atribut selector_dollar" menjadi warna ungu</p>
+                <p title="atribut-selector dollar">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata dollar diakhir kalimat "atribut-selector dollar" menjadi warna ungu</p>
+                <p title="atribut-selector-dollar">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata dollar diakhir kalimat "atribut-selector-dollar" menjadi warna ungu</p>
+                <p title="atribut-selector_dollar">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata dollar diakhir kalimat "atribut-selector_dollar" menjadi warna ungu</p>
+                <p title="atribut_selector dollar">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata dollar diakhir kalimat "atribut_selector dollar" menjadi warna ungu</p>
+                <p title="atribut_selector-dollar">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata dollar diakhir kalimat "atribut_selector-dollar" menjadi warna ungu</p>
+                <p title="atribut_selector_dollar">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata dollar diakhir kalimat "atribut_selector_dollar" menjadi warna ungu</p>
+                <li>Star *</li>
+                <p title="atribut star selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata star dimanapun posisinya "atribut star selector" menjadi warna ungu</p>
+                <p title="atribut-star selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata star dimanapun posisinya "atribut-star selector" menjadi warna ungu</p>
+                <p title="atribut_star selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata star dimanapun posisinya "atribut_star selector" menjadi warna ungu</p>
+                <p title="atribut star-selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata star dimanapun posisinya "atribut star-selector" menjadi warna ungu</p>
+                <p title="atribut-star-selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata star dimanapun posisinya "atribut-star-selector" menjadi warna ungu</p>
+                <p title="atribut_star-selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata star dimanapun posisinya "atribut_star-selector" menjadi warna ungu</p>
+                <p title="atribut star_selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata star dimanapun posisinya "atribut star_selector" menjadi warna ungu</p>
+                <p title="atribut-star_selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata star dimanapun posisinya "atribut-star_selector" menjadi warna ungu</p>
+                <p title="atribut_star_selector">Contoh merubah kalimat ini yang memiliki atribut title dengan semua yang ada kata star dimanapun posisinya "atribut_star_selector" menjadi warna ungu</p>
+            </ul>
+            <p>Ini paragraf yang dirubah menjadi orange menggunakan General Sibling Selector. Semua paragraf setelah h2 ini akan menjadi orange.</p>
+            <p>paragraf ke dua ini akan menjadi orange hingga seterusnya selama masih ada saudara atau turunannya.</p>
+        </div>
+        
+        <div id="color">
+            <h2>Color</h2>
+            <p>Pemilihan warna menggunakan berbagai macam set color</p>
+            <ul>
+                <li>Color Name</li>
+                <p id="color-name">Contoh merubah border ini menjadi warna aqua dengan jenis pemilihan warna menggunakan color name</p>
+                <li>Hex Code</li>
+                <p id="hex-code">Contoh merubah warna border ini menjadi warna merah dengan jenis pemilihan warna menggunakan hex code</p>
+                <li>RGB Value</li>
+                <p id="rgb-value">Contoh merubah warna border ini menjadi warna hijau dengan jenis pemilihan warna menggunakan rgb value</p>
+                <li>RGBA Value</li>
+                <p id="rgba-value">Contoh merubah warna background ini menjadi warna hijau dengan jenis pemilihan warna menggunakan rgba value dan set opacitynya dengan setengah solid</p>
+                <li>HSL Value</li>
+                <p id="hsl-value">Contoh merubah warna background ini menjadi warna hijau dengan jenis pemilihan warna menggunakan hsl value dan set kemurniannya/saturasi 100% dengan kecerahan/lightness 50%</p>
+            </ul>
+        </div>
+        
+        <div id="font">
+            <h2>Font</h2>
+            <ul>
+                <li>Font Family</li>
+                <p id="font-family">Contoh merubah font kalimat ini menjadi verdana</p>
+                <li>Font Size</li>
+                <p id="xx-large">Contoh merubah ukuran/size kalimat ini dengan extra large (xx-large)</p>
+                <p id="xx-small">Contoh merubah ukuran/size kalimat ini dengan extra small (xx-small)</p>
+                <p id="pixel">Contoh merubah ukuran/size kalimat ini sebesar 30px</p>
+                <p id="persen">Contoh merubah ukuran/size kalimat ini sebesar 50%</p>
+                <p id="em">Contoh merubah ukuran/size kalimat ini dengan setengah ukuran menggunakan em</p>
+                <li>Font Weight</li>
+                <p id="font-weight">Contoh merubah ketebalan kalimat ini dengan ketebalan bold 1/solid menggunakan font-weight</p>
+                <li>Font Style</li>
+                <p id="font-style">Contoh merubah gaya kalimat ini dengan gaya italic/miring menggunakan font-style</p>
+            </ul>
+        </div>
+
+        <div id="text">
+            <h2>Text</h2>
+            <ul>
+                <li>Text Transform</li>
+                <p id="text-transform">Contoh merubah kalimat ini dengan huruf kapital/uppercase menggunakan text transform</p>
+                <li>Text Decoration</li>
+                <p id="text-decoration">Contoh menambahkan kalimat ini dengan garis bawah/underline menggunakan text decoration</p>
+                <li>Text Align</li>
+                <p id="text-align">Contoh menempatkan kalimat ini ke tengah/center menggunakan text align</p>
+                <li>Text Shadow</li>
+                <p id="text-shadow">Contoh memberikan efek shadow pada kalimat ini menggunakan text shadow dengan nilai ke kanan 10px kebawah 5px kesolid an 5px dengan warna bayangan hitam/black</p>
+                <li>Word Spacing</li>
+                <p id="word-spacing">Contoh meregangkan antar kata pada kalimat ini sebesar 0.5em menggunakan word spacing</p>
+                <li>Letter Spacing</li>
+                <p id="letter-spacing">Contoh meregangkan antar huruf pada kalimat ini sebesar 5px menggunakan letter spacing</p>
+            </ul>
+        </div>
+        
+        <div id="display">
+            <h2>Display</h2>
+            <ul>
+                <li>Inline</li>
+                <p id="inline">Contoh kata <span>HALLO</span> ini akan di display menggunakan inline sehingga akan selalu mengikut letak layout sesuai kata sebelumnya</p>
+                <li>Block</li>
+                <p id="block">Contoh kata <span>HALLO</span> ini akan di display menggunakan block sehingga selalu ditampilkan sendiri tanpa ada kata yang mengikut</p>
+            </ul>
+        </div>
+
+        <div id="list_style">
+            <h2>List Style</h2>
+            <ol>
+                <li id="upper-roman">Contoh merubah list di kalimat ini menjadi I atau upper roman</li>
+                <li id="lower-roman">Contoh merubah list di kalimat ini menjadi i atau lower roman</li>
+                <li id="upper-latin">Contoh merubah list di kalimat ini menjadi A atau upper latin</li>
+                <li id="lower-latin">Contoh merubah list di kalimat ini menjadi a atau lower latin</li>
+            </ol>
+            <ul>
+                <li id="inside">Contoh merubah posisi list kalimat unordered list ini kedalam menggunakan inside</li>
+                <li id="outside">Contoh merubah posisi list kalimat unordered list ini keluar menggunakan inside</li>
+            </ul>
+        </div>
+
+
+    </body>
 </html>

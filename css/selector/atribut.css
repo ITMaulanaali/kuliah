@@ -1,0 +1,30 @@
+/* mengseleksi paragraf yang hanya memiliki atribut title dengan kata atribut_selector_biasa */
+div#jenis-selector p[title="atribut_selector_biasa"]{
+    color:purple;
+}
+
+/* mengseleksi semua paragraf yang memiliki atribut title yang ada kata cacing didalamnya */
+div#jenis-selector p[title~="cacing"]{
+    color:purple;
+}
+
+/* mengseleksi semua paragraf yang memiliki atribut title yang ada kata pipeline dan bisa ada penghubung - setelah kata pipeline */
+div#jenis-selector p[title|="pipeline"]{
+    color: purple;
+}
+
+/* mengseleksi semua  paragraf yang memiliki atribut title yang ada kata atribut*/
+div#jenis-selector p[title*="star"]{
+    color:purple;
+}
+
+/* mengseleksi semua paragraf yang memiliki atribut title yang ada kata atribut di akhir value */
+div#jenis-selector p[title$="dollar"]{
+    color:purple;
+}
+
+/* mengseleksi semua paragraf yang memiliki atribut title yang ada kata atribut di awal value */
+div#jenis-selector p[title^="caret"]{
+    color:purple;
+}
+
