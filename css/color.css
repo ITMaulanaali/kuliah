@@ -1,0 +1,23 @@
+/* Color Name*/
+div#color #color-name{
+    border: 2px solid aqua;
+}
+
+/* Color Hex Code*/
+div#color #hex-code{
+    border: 2px solid #c22961;
+}
+
+/* Color RGB */
+div#color #rgb-value{
+    border: 2px solid rgb(0,255,0);
+}
+
+/* Color RGBA */
+div#color #rgba-value{
+    background-color: rgba(0,255,0,0.5);
+}
+
+div#color #hsl-value{
+    background-color: hsl(120, 100%, 50%);
+}

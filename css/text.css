@@ -1,0 +1,23 @@
+#text-transform{
+    text-transform: uppercase;
+}
+
+#text-decoration{
+    text-decoration: underline;
+}
+
+#text-align{
+    text-align:center;
+}
+
+#text-shadow{
+    text-shadow: 10px 5px 5px black;
+}
+
+#word-spacing{
+    word-spacing: 0.5em;
+}
+
+#letter-spacing{
+    letter-spacing: 5px;
+}
