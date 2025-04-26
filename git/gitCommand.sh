@@ -74,3 +74,6 @@ git rm namaFile.txt
 
 #memindahkan file dari track menjadi untracked
 git rm --cached
+
+#melakukan merge dari branch lain
+git merge namaBranch
