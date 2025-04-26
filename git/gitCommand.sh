@@ -76,4 +76,12 @@ git rm namaFile.txt
 git rm --cached
 
 #melakukan merge dari branch lain
-git merge namaBranch
+#fast-forward
+git merge namaBranch --ff
+#three-way-forward
+git merge namaBranch --no-ff
+#Rebase
+git merge namaBranch --rebase
+#Squash
+git merge namaBranch --squash
+git commit -m "catatan"
