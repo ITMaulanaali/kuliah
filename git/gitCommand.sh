@@ -66,14 +66,14 @@ git stash pop
 #mengupdate data branch yang terbaru di github ke git local
 git pull --prune
 
-#menghapus semua file dan folder yang masih untracked
-git clean -fd
-
-#menghapus file dari track
-git rm namaFile.txt
+#menghapus atau mengembalikan perubahan file dari yang baru ke awal saat commit terakhir
+git restore namaFile.txt
 
 #memindahkan file dari track menjadi untracked
 git rm --cached
+
+#menghapus semua file dan folder yang masih untracked
+git clean -fd
 
 #melakukan merge dari branch lain
 #fast-forward
