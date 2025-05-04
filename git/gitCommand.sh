@@ -60,6 +60,9 @@ git stash
 #melihat daftar stash yang ada
 git stash list
 
+#menghapus stash tertentu
+git stash drop stash@{nomor yang dihapus}
+
 #mengambil stash sebelumnya
 git stash pop
 
