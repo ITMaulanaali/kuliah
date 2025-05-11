@@ -50,6 +50,9 @@ git branch -d newBranch
 #membatalkan dan mengembalikan file ke working directory dari commit yang tidak sengaja sebelumnya
 git reset --soft HEAD~1
 
+#menerapkan paksa (mengganti semua commit dengan yang sama pada branch remote master)
+git reset --hard origin/master
+
 #menambahkan konfigurasi file konfigurasi file .ini ke git local jika berpindah branch
 [includeIf "onbranch:master"]
   path = /lokasi/filenya
