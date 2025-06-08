@@ -23,3 +23,14 @@ docker container stop namaContainer/id
 
 #menghapus container
 docker container rm namaContainer/id
+
+#melihat logs container. Untuk realtime tinggal tambahkan flag -f
+docker container logs namaContainer/id
+
+#mengeksekusi atau melakukan prompt ke container secara realtime (menjalankan file sh) atau /bin/bash
+docker container exec -it namaContainer/id sh
+docker container exec -it namaContainer/id /bin/bash
+
+#menambahkan port forwarding ketika membuat container
+docker container create --name latihanweb --publish 8080:80 nginx:latest
+
