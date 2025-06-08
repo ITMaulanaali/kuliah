@@ -36,3 +36,12 @@ docker container create --name latihanweb --publish 8080:80 nginx:latest
 
 #menambahkan environtment variable ketika membuat container
 docker container create --name mysqlku --env MYSQL_ROOT_PASSWORD="123" mysql:latest
+
+#menambahkan limit resource ketika membuat container
+docker container create --name nginxku --memory 1g --cpus 1 mysql:latest
+
+#mount bind container untuk sinkronisasi data di localhost (tambahkan readonly jika ingin container hanya bisa read data saja)
+docker container create --name nginxku --mount "type=bind,source=/pathhost,target=pathcontainer" nginx:latest
+
+#melihat semua recource tiap continer
+docker container stats
