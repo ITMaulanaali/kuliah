@@ -57,3 +57,20 @@ docker volume create namavolume
 
 #menghapus volume
 docker volume rm namavolume
+
+#melihat kumpulan network
+docker network ls
+
+#membuat network
+docker network create --driver namadriver namanetwork
+
+#melihat secara detail dalam format json sesuatu
+docker container inspect namacontainer
+
+#menghapus suatu yang tidak digunakan
+docker container prune
+docker image prune
+docker volume prune
+docker network prune
+#menghapus semua sesuatu secara otomatis yang tidak digunakan
+docker system prune
