@@ -43,5 +43,17 @@ docker container create --name nginxku --memory 1g --cpus 1 mysql:latest
 #mount bind container untuk sinkronisasi data di localhost (tambahkan readonly jika ingin container hanya bisa read data saja)
 docker container create --name nginxku --mount "type=bind,source=/pathhost,target=pathcontainer" nginx:latest
 
+#mount volume ke container untuk sinkronisasi data di docker
+docker container create --name nginxku --mount "type=volume,source=namavolume,targe=pathcontainer" nginx:latest
+
 #melihat semua recource tiap continer
 docker container stats
+
+#melihat kumpulan volume
+docker volume ls
+
+#membuat volume
+docker volume create namavolume
+
+#menghapus volume
+docker volume rm namavolume
