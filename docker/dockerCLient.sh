@@ -34,3 +34,5 @@ docker container exec -it namaContainer/id /bin/bash
 #menambahkan port forwarding ketika membuat container
 docker container create --name latihanweb --publish 8080:80 nginx:latest
 
+#menambahkan environtment variable ketika membuat container
+docker container create --name mysqlku --env MYSQL_ROOT_PASSWORD="123" mysql:latest
